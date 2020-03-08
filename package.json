@@ -1,0 +1,51 @@
+{
+  "name": "aws-rekognition-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@sentry/node": "^5.6.2",
+    "aws-sdk": "^2.634.0",
+    "axios": "^0.19.1",
+    "bcryptjs": "^2.4.3",
+    "bee-queue": "^1.2.2",
+    "cors": "^2.8.5",
+    "delay": "^4.3.0",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "express-async-errors": "^3.1.1",
+    "express-handlebars": "^3.1.0",
+    "express.io": "^1.1.13",
+    "http": "^0.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.7.12",
+    "multer": "^1.4.2",
+    "nodemailer": "^6.3.0",
+    "nodemailer-express-handlebars": "^3.1.0",
+    "opencv4nodejs": "^5.5.0",
+    "redis": "^2.8.0",
+    "sequelize": "^5.16.0",
+    "socket.io": "^2.3.0",
+    "youch": "^2.0.10",
+    "yup": "^0.27.0"
+  },
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "queue": "nodemon src/queue.js",
+    "build": "sucrase ./src -d ./dist --transforms imports",
+    "start": "node dist/server.js",
+    "telegram": "nodemon src/app/jobs/TelegramMessage.js",
+    "telegrambot": "nodemon src/app/controllers/TelegramController.js"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.1.0",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-prettier": "^3.1.0",
+    "nodemon": "^1.19.1",
+    "prettier": "^1.18.2",
+    "sequelize-cli": "^5.5.0",
+    "sucrase": "^3.10.1"
+  }
+}

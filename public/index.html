@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webcam Stream with OpenCV</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+  </head>
+  <body>
+    <h1>OpenCV Video Streaming</h1>
+
+    <img
+      id="image"
+      width="796"
+      height="596"
+      alt="Video Player"
+      style="position: absolute"
+    ></img>
+    <canvas
+      id="Mycanvas"
+      width="798"
+      height="598"
+      style="position: absolute; z-index: 999;"
+    ></canvas>
+    <script>
+
+      const socket = io.connect('http://localhost:9090');
+      socket.on('image', image => {
+        const imageElm = document.getElementById('image');
+        imageElm.src = `data:image/jpeg;base64,${image}`;
+      });
+      socket.on('box', box => {
+        var c = document.getElementById("Mycanvas");
+        var ctx = c.getContext("2d");
+        let finalEmotion = null;
+        let finalConfidence = null;
+        ctx.clearRect(0,0,798, 598);
+        box.forEach(boxes => {
+        ctx.beginPath();
+        ctx.lineWidth = "1";
+        ctx.strokeStyle = "red";
+        ctx.rect(
+        boxes.BoundingBox.Left * 798,
+        boxes.BoundingBox.Top * 598,
+        boxes.BoundingBox.Width * 798,
+        boxes.BoundingBox.Height * 598);
+        Math.max.apply(Math, boxes.Emotions.map(emotion => {
+          if (emotion.Confidence >= 0.96){
+            finalEmotion = emotion.Type;
+          }
+          if(emotion < 0.96){
+            finalEmotion= "CALM";
+          }
+        }))
+        ctx.fillText(`Age: ${boxes.AgeRange.High}`, (boxes.BoundingBox.Left * 798 + ((boxes.BoundingBox.Width * 798) * 1.1)), (boxes.BoundingBox.Top * (598 + 32)));
+        ctx.fillText(`Gender: ${boxes.Gender.Value}`, (boxes.BoundingBox.Left * 798 + ((boxes.BoundingBox.Width * 798) * 1.1)), (boxes.BoundingBox.Top * (598 + 64)));
+        ctx.fillText(`Eyes: ${boxes.EyesOpen.Value ? 'Open' : 'Close'}`, (boxes.BoundingBox.Left * 798 + ((boxes.BoundingBox.Width * 798) * 1.1)), (boxes.BoundingBox.Top * (598 + 96)));
+        ctx.fillText(`Eyeglasses: ${boxes.Eyeglasses.Value}`, (boxes.BoundingBox.Left * 798 + ((boxes.BoundingBox.Width * 798) * 1.1)), (boxes.BoundingBox.Top * (598 + 128)));
+        ctx.fillText(`Sunglasses: ${boxes.Sunglasses.Value}`, (boxes.BoundingBox.Left * 798 + ((boxes.BoundingBox.Width * 798) * 1.1)), (boxes.BoundingBox.Top * (598 + 162)));
+        ctx.fillText(`Emotion: ${finalEmotion}`, (boxes.BoundingBox.Left * 798 + ((boxes.BoundingBox.Width * 798) * 1.1)), (boxes.BoundingBox.Top * (598 + 194)));
+        ctx.stroke();
+        });
+      });
+    </script>
+  </body>
+</html>
