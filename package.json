@@ -25,7 +25,7 @@
     "opencv4nodejs": "^5.5.0",
     "redis": "^2.8.0",
     "sequelize": "^5.16.0",
-    "socket.io": "^2.3.0",
+    "socket.io": "^2.4.0",
     "youch": "^2.0.10",
     "yup": "^0.27.0"
   },
