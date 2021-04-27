@@ -23,7 +23,7 @@
     "nodemailer": "^6.3.0",
     "nodemailer-express-handlebars": "^3.1.0",
     "opencv4nodejs": "^5.5.0",
-    "redis": "^2.8.0",
+    "redis": "^3.1.1",
     "sequelize": "^5.16.0",
     "socket.io": "^2.3.0",
     "youch": "^2.0.10",
