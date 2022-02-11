@@ -14,7 +14,7 @@
     "dotenv": "^8.1.0",
     "express": "^4.17.1",
     "express-async-errors": "^3.1.1",
-    "express-handlebars": "^3.1.0",
+    "express-handlebars": "^5.3.1",
     "express.io": "^1.1.13",
     "http": "^0.0.0",
     "jsonwebtoken": "^8.5.1",
