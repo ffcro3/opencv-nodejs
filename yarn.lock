@@ -3311,10 +3311,10 @@ opencv-build@^0.1.9:
   dependencies:
     npmlog "^4.1.2"
 
-opencv4nodejs@^5.5.0:
-  version "5.5.0"
-  resolved "https://registry.yarnpkg.com/opencv4nodejs/-/opencv4nodejs-5.5.0.tgz#3a6f8954293baefd2df16a8274807a8c3166612e"
-  integrity sha512-coQ/XuQnWh5ew7LhUYbAMXTHo3wEya/4nlDi99l+w/kk1uHw8nWy2OptVI74IxIlYQKKqNy4pv2DdMY0vheA/g==
+opencv4nodejs@^5.6.0:
+  version "5.6.0"
+  resolved "https://registry.yarnpkg.com/opencv4nodejs/-/opencv4nodejs-5.6.0.tgz#330a397d61070194a78c6fdfb793f7d8b82b5414"
+  integrity sha512-JvcT1hb2JUCdntcVABgD9Gprr+gkXBe+jhHKvrr0Ug51y087K4ybm0vHBQVzI2ei1aJxEc9tNknPL9rpyx5Xuw==
   dependencies:
     nan "^2.14.0"
     native-node-utils "^0.2.7"
