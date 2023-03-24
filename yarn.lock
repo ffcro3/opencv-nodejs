@@ -342,6 +342,13 @@ arraybuffer.slice@~0.0.7:
   resolved "https://registry.yarnpkg.com/arraybuffer.slice/-/arraybuffer.slice-0.0.7.tgz#3bbc4275dd584cc1b10809b89d4e8b63a69e7675"
   integrity sha512-wGUIVQXuehL5TCqQun8OW81jGzAWycqzFF8lFp+GOM5BXLYj3bKNsYC4daB7n6XjCqxQA/qgTJ+8ANR3acjrog==
 
+as-table@^1.0.36:
+  version "1.0.55"
+  resolved "https://registry.yarnpkg.com/as-table/-/as-table-1.0.55.tgz#dc984da3937745de902cea1d45843c01bdbbec4f"
+  integrity sha512-xvsWESUJn0JN421Xb9MQw6AsMHRCUknCe0Wjlxvjud80mU4E6hQf1A6NzQKcYNmYw62MfzEtXc+badstZP3JpQ==
+  dependencies:
+    printable-characters "^1.0.42"
+
 asap@~2.0.6:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/asap/-/asap-2.0.6.tgz#e50347611d7e690943208bbdafebcbc2fb866d46"
@@ -929,6 +936,11 @@ cookie@0.4.0:
   resolved "https://registry.yarnpkg.com/cookie/-/cookie-0.4.0.tgz#beb437e7022b3b6d49019d088665303ebe9c14ba"
   integrity sha512-+Hp8fLp57wnUSt0tY0tHEXh4voZRDnoIrZPqlo3DPiI4y9lwg/jqx+1Om94/W6ZaPDOUbnjOt/99w66zk+l1Xg==
 
+cookie@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/cookie/-/cookie-0.5.0.tgz#d1f5d71adec6558c58f389987c366aa47e994f8b"
+  integrity sha512-YZ3GUyn/o8gfKJlnlX7g7xq4gyO6OSuhGPKaaGssGB2qgDUS0gPgtTvoyZLTt9Ab6dC4hfc9dV5arkvc/OCmrw==
+
 copy-descriptor@^0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/copy-descriptor/-/copy-descriptor-0.1.1.tgz#676f6eb3c39997c2ee1ac3a924fd6124748f578d"
@@ -991,6 +1003,11 @@ d@1, d@^1.0.1:
   dependencies:
     es5-ext "^0.10.50"
     type "^1.0.1"
+
+data-uri-to-buffer@^2.0.0:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/data-uri-to-buffer/-/data-uri-to-buffer-2.0.2.tgz#d296973d5a4897a5dbe31716d118211921f04770"
+  integrity sha512-ND9qDTLc6diwj+Xe5cdAgVTbLVdXbtxTJRXRhli8Mowuaan+0EJOtdqJ0QCHNSSPyoXGx9HX2/VMnKeC34AChA==
 
 debug@*, debug@^4.0.1, debug@^4.1.1, debug@~4.1.0:
   version "4.1.1"
@@ -1905,6 +1922,14 @@ get-intrinsic@^1.0.2, get-intrinsic@^1.1.1, get-intrinsic@^1.1.3, get-intrinsic@
     function-bind "^1.1.1"
     has "^1.0.3"
     has-symbols "^1.0.3"
+
+get-source@^2.0.12:
+  version "2.0.12"
+  resolved "https://registry.yarnpkg.com/get-source/-/get-source-2.0.12.tgz#0b47d57ea1e53ce0d3a69f4f3d277eb8047da944"
+  integrity sha512-X5+4+iD+HoSeEED+uwrQ07BOQr0kEDFMVqqpBuI+RaZBpBpHCuXxo70bjar6f0b0u/DQJsJ7ssurpP0V60Az+w==
+  dependencies:
+    data-uri-to-buffer "^2.0.0"
+    source-map "^0.6.1"
 
 get-stdin@^6.0.0:
   version "6.0.0"
@@ -3023,10 +3048,10 @@ multiparty@2.2.0:
     readable-stream "~1.1.9"
     stream-counter "~0.2.0"
 
-mustache@^3.0.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/mustache/-/mustache-3.2.0.tgz#1c68e0bf77817a92e8a9216e35c53bbb342345f6"
-  integrity sha512-n5de2nQ1g2iz3PO9cmq/ZZx3W7glqjf0kavThtqfuNlZRllgU2a2Q0jWoQy3BloT5A6no7sjCTHBVn1rEKjx1Q==
+mustache@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/mustache/-/mustache-4.2.0.tgz#e5892324d60a12ec9c2a73359edca52972bf6f64"
+  integrity sha512-71ippSywq5Yb7/tVYyGbkBggbU8H3u5Rz56fH60jGFgr8uHwxs+aSKeqmluIVzM0m0kB7xQjKS6qPfd0b2ZoqQ==
 
 mute-stream@0.0.8:
   version "0.0.8"
@@ -3514,6 +3539,11 @@ prettier@^2.8.4:
   version "2.8.4"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.8.4.tgz#34dd2595629bfbb79d344ac4a91ff948694463c3"
   integrity sha512-vIS4Rlc2FNh0BySk3Wkd6xmwxB0FpOndW5fisM5H8hsZSxU2VWVB5CWIkIjWvrHjIhxk2g3bfMKM87zNTrZddw==
+
+printable-characters@^1.0.42:
+  version "1.0.42"
+  resolved "https://registry.yarnpkg.com/printable-characters/-/printable-characters-1.0.42.tgz#3f18e977a9bd8eb37fcc4ff5659d7be90868b3d8"
+  integrity sha512-dKp+C4iXWK4vVYZmYSd0KBH5F/h1HoZRsbJ82AVKRO3PEo8L4lBS/vLwhVtpwwuYcoIsVY+1JYKR268yn480uQ==
 
 process-nextick-args@~2.0.0:
   version "2.0.1"
@@ -4237,10 +4267,13 @@ sprintf-js@~1.0.2:
   resolved "https://registry.yarnpkg.com/sprintf-js/-/sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c"
   integrity sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw=
 
-stack-trace@0.0.10:
-  version "0.0.10"
-  resolved "https://registry.yarnpkg.com/stack-trace/-/stack-trace-0.0.10.tgz#547c70b347e8d32b4e108ea1a2a159e5fdde19c0"
-  integrity sha1-VHxws0fo0ytOEI6hoqFZ5f3eGcA=
+stacktracey@^2.1.8:
+  version "2.1.8"
+  resolved "https://registry.yarnpkg.com/stacktracey/-/stacktracey-2.1.8.tgz#bf9916020738ce3700d1323b32bd2c91ea71199d"
+  integrity sha512-Kpij9riA+UNg7TnphqjH7/CzctQ/owJGNbFkfEeve4Z4uxT5+JapVLFXcsurIfN34gnTWZNJ/f7NMG0E8JDzTw==
+  dependencies:
+    as-table "^1.0.36"
+    get-source "^2.0.12"
 
 static-extend@^0.1.1:
   version "0.1.2"
@@ -4987,14 +5020,14 @@ yeast@0.1.2:
   resolved "https://registry.yarnpkg.com/yeast/-/yeast-0.1.2.tgz#008e06d8094320c372dbc2f8ed76a0ca6c8ac419"
   integrity sha1-AI4G2AlDIMNy28L47XagymyKxBk=
 
-youch@^2.0.10:
-  version "2.0.10"
-  resolved "https://registry.yarnpkg.com/youch/-/youch-2.0.10.tgz#e0f6312b12304fd330a0c4a0e0925b0123f7d495"
-  integrity sha512-qPLQW2TuwlcK9sm5i1Gbb9ezRZRZyzr6NsY5cqxsbh+2iEyKPxLlz0OSAc+pQ7mv1pYZLri1MXynggP6R2FcNQ==
+youch@^3.2.3:
+  version "3.2.3"
+  resolved "https://registry.yarnpkg.com/youch/-/youch-3.2.3.tgz#63c94ea504950a1a5bf1d5969439addba6c726e2"
+  integrity sha512-ZBcWz/uzZaQVdCvfV4uk616Bbpf2ee+F/AvuKDR5EwX/Y4v06xWdtMluqTD7+KlZdM93lLm9gMZYo0sKBS0pgw==
   dependencies:
-    cookie "^0.3.1"
-    mustache "^3.0.0"
-    stack-trace "0.0.10"
+    cookie "^0.5.0"
+    mustache "^4.2.0"
+    stacktracey "^2.1.8"
 
 yup@^0.27.0:
   version "0.27.0"
