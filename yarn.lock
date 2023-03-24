@@ -1944,7 +1944,7 @@ glob-parent@^5.0.0:
   dependencies:
     is-glob "^4.0.1"
 
-glob@^7.1.3:
+glob@7.1.6, glob@^7.1.3:
   version "7.1.6"
   resolved "https://registry.yarnpkg.com/glob/-/glob-7.1.6.tgz#141f33b81a7c2492e125594307480c46679278a6"
   integrity sha512-LwaxwyZ72Lk7vZINtNNrywX0ZuLyStrdDtabefZKAY5ZGJhVtgdznluResxNmPitE0SAO+O26sWTHeKSI2wMBA==
@@ -4405,12 +4405,13 @@ strip-json-comments@~2.0.1:
   resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-2.0.1.tgz#3c531942e908c2697c0ec344858c286c7ca0a60a"
   integrity sha1-PFMZQukIwml8DsNEhYwobHygpgo=
 
-sucrase@^3.10.1:
-  version "3.11.0"
-  resolved "https://registry.yarnpkg.com/sucrase/-/sucrase-3.11.0.tgz#8d5eeeb38af5c376de906065fa145ba786af5bb8"
-  integrity sha512-vzaNQWMZGNNIOONwBGkwoVPk/haP8TLK0SRTxL/FvuIoiHzDgySBTReTLaOYLAcv4OXvyU3KddLreDvR/bABLA==
+sucrase@^3.30.0:
+  version "3.30.0"
+  resolved "https://registry.yarnpkg.com/sucrase/-/sucrase-3.30.0.tgz#ce8f49152913c70945d65d9e5405d66a399cca8a"
+  integrity sha512-7d37d3vLF0IeH2dzvHpzDNDxUqpbDHJXTJOAnQ8jvMW04o2Czps6mxtaSnKWpE+hUS/eczqfWPUgQTrazKZPnQ==
   dependencies:
     commander "^4.0.0"
+    glob "7.1.6"
     lines-and-columns "^1.1.6"
     mz "^2.7.0"
     pirates "^4.0.1"
