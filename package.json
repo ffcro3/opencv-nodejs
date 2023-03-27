@@ -18,7 +18,7 @@
     "express.io": "^1.1.13",
     "http": "^0.0.0",
     "jsonwebtoken": "^9.0.0",
-    "mongoose": "^5.7.12",
+    "mongoose": "^7.0.3",
     "multer": "^1.4.2",
     "nodemailer": "^6.6.1",
     "nodemailer-express-handlebars": "^3.1.0",
