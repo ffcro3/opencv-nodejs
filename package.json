@@ -44,7 +44,7 @@
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-prettier": "^3.4.1",
     "nodemon": "^1.19.1",
-    "prettier": "^2.8.4",
+    "prettier": "^2.8.7",
     "sequelize-cli": "^5.5.0",
     "sucrase": "^3.30.0"
   }
